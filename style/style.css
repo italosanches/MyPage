@@ -51,7 +51,6 @@ body{
 
 .apresentacao__conteudo{
     width: 50%;
-   
     display: flex;
     min-height: 80vh;
     flex-direction: column;
@@ -117,15 +116,27 @@ body{
     font-family: var(--fonteSecundaria);
     font-size: 1.5rem;
     font-weight: 400;
+    width: auto;
    
 }
 
 
 @media (max-width:1200px)/*enquanto essa condição for verdadeira*/
 {
+    .cabecalho{
+        padding: 12%;
+    }
+    .cabecalho__navegacao{
+        justify-content: center;
+    }
    .apresentacao{
     flex-direction: column-reverse;
+    padding: 5%;
    }
+   .apresentacao__conteudo{
+    width: auto;/*Usa todo o espaço automaticamente*/
+   }
+   
 }
     
 
